@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+body{
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.nav-item a:hover{
+    color: hsl(5, 85%, 63%) !important;
+}
+.container{
+    height: 70px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.item1 { 
+    grid-area: picture; 
+    width: 30em;
+    font-size: 30px;
+}
+.item2 { 
+    grid-area: New; 
+    width: 17em;
+    background-color: hsl(240, 100%, 5%);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+}
+.item2 h1{
+    color:hsl(35, 77%, 62%);
+    font-weight: 600;
+}
+.item2 h2{
+    font-size: 20px;
+    padding-top: 30px;
+    color: white;
+    font-weight: 600;
+}
+.item2 h2:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.item2 p{
+    color: white;
+    font-size: 15px;
+}
+.item2 hr{
+    color: white;
+}
+.item3 { 
+    grid-area: bright;
+    font-size: 50px;
+    font-weight: 800;
+    width: 7em;
+ }
+ 
+.item4 { 
+    grid-area: readMore; 
+    width: 25em;
+    padding-top: 10px;
+}
+.item4 p{
+    font-size: 18px;
+    color: hsl(236, 13%, 42%);
+}
+.item4 button{
+    border: none;
+    outline: none;
+    background-color: hsl(5, 85%, 63%);
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.item4 button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'picture picture picture picture picture New'
+    'bright bright bright readMore readMore New';
+  gap: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.grid-container > div {
+  text-align: left;
+  
+  
+}
+
+.web3Img{
+    width: 100%;
+    margin-top: none;
+}
+.service {
+    display: inline-block;
+    margin-left: 120px;
+}
+.service h2:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+} 
+.future{
+    width: 60px;
+    padding: 10px;
+    width: 200px;
+    margin: 15px 15px 15px 15px;
+
+    display: flex;
+    font-size: 5em !important;
+}
+.images {
+    display:inline-block;
+    width : 100px;
+    
+}
+
+.future h1{
+    font-size: 30px;
+    color:hsl(233, 8%, 79%);
+    font-weight: 600;
+    width: 50px;
+}
+.future h2{
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+}
+.future p{
+    font-size: 14px;
+    width: 200px;
+}
+.details{
+    margin-left: 15px;
+}
+.footer{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color: black;
+   height: 30px;
+   width: 100%; 
+   padding-top: 30px;
+   margin-bottom: 0px;
+   margin-top: 10px;
+   color:hsl(233, 8%, 79%);
+}
+.name{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color:hsl(233, 8%, 79%);
+}
+.sidepanel{
+    display: none;
+}
+.blackout{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'picture' 
+          'picture' 
+          'picture' 
+          'picture' 
+          'picture'
+          'bright' 
+          'bright'
+            'bright'
+         'readMore'
+        'readMore'
+              'New'
+          'New';
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 1px;
+        margin-right: 20px;
+      }
+
+      .web3Img{
+        width: 100%;
+        margin-top: none;
+    }
+
+    .item1 { 
+        grid-area: picture; 
+        width: 20em;
+        font-size: 20px;
+    }
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .item2 { 
+        grid-area: New; 
+        width: 24em;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 30px;
+    }
+    .future{
+        width: 60px;
+        padding: 5px;
+        width: 200px;
+        margin: 15px 5px 15px 5px;
+    
+        display: flex;
+        font-size: 5em !important;
+    }
+    .service {
+        display: inline-block;
+        margin-left: 15px;
+    }
+}
